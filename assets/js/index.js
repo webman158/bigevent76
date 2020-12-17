@@ -3,6 +3,7 @@ getUserInfo();
 
 let layer = layui.layer;
 
+// 必须是全局的，否则之后无法通过window.parent 获取到父页面index中这个全局函数
 function getUserInfo() {
   $.ajax({
     // 注意：以下写法的前提条件是在页面中引入ajaxConfig.js文件

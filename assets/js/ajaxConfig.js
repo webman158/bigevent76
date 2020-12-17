@@ -2,7 +2,7 @@
 $.ajaxPrefilter(function (options) {
   // 优化根路径 ==> $.ajaxPrefilter()
   options.url = "http://ajax.frontend.itheima.net" + options.url;
-  console.log(options);
+  // console.log(options);
 
   // 处理headers请求头 带上token
   options.headers = {
